@@ -1,0 +1,160 @@
+
+
+
+.top-wrap {
+    @apply flex justify-between items-center px-[85px] py-[10px];
+    ul {
+        @apply flex gap-[30px];
+        a {
+            @apply flex items-center leading-[22.4px] text-[14px] capitalize gap-[7px];
+        }
+    }
+}
+
+.headings {
+    @apply w-full flex !sticky justify-between items-center box-border px-[85px] py-[30px] gap-[50px];
+    nav {
+        @apply flex flex-wrap gap-x-[30px] gap-y-[20px];
+        a {
+            @apply leading-[20.3px] text-[16px] font-[600] capitalize;
+        }
+    }
+
+    .profile {
+        @apply flex items-center gap-4;
+        .pay-cart {
+            @apply flex items-center gap-4 capitalize;
+            p {
+                @apply text-[12px] leading-[12px] text-[#121212c2] font-[500];
+            }
+            h3 {
+                @apply text-nowrap font-[700] text-[16px] leading-[16px];
+            }
+        }
+    }
+}
+
+
+.scroller-product {
+    @apply flex items-center py-[30px] px-2 gap-2;
+    .scrolls {
+        @apply flex gap-[31px] items-center flex-grow flex-1 overflow-y-auto min-h-[20px];
+        ::-webkit-scrollbar {
+            display: none
+        }
+        .product-item {
+            @apply relative w-[338px] h-[338px] min-w-[338px] min-h-[338px] max-w-[338px] max-h-[338px] !text-white overflow-hidden rounded-[10px];
+            .texty {
+                position: absolute;
+                height: fit-content;
+                width: fit-content;
+                background: transparent;
+                bottom: 20px;
+                left: 20px;
+                z-index: 1000;
+                h2 {
+                    @apply text-[30px] font-semibold leading-[30px];
+                }
+                p {
+                    @apply text-[12px] font-semibold leading-[19.2px] text-[#b7b7b7];
+                }
+            }
+        }
+    }
+}
+
+
+.prev-category {
+    @apply flex flex-col px-[50px] py-[40px];
+    h1 {
+        @apply font-semibold text-[40px] leading-[48px];
+    }
+    .slide-list {
+        @apply flex flex-1 gap-5 flex-grow overflow-y-auto;
+        .product {
+            width: 330px;
+            min-width: 330px;
+            position: relative;
+            img {
+                width: 100% !important;
+                min-height: 330px;
+                max-height: 330px;
+                margin-bottom: 10px;
+                object-fit: contain;
+                height: auto;
+            }
+            .color-variant {
+                @apply flex items-center gap-2;
+                span {
+                    @apply block w-2 cursor-pointer h-2 rounded-full bg-blue-900;
+                }
+            }
+            p {
+                @apply font-semibold text-[18px] leading-[23.4px] my-1;
+            }
+            .ratings {
+                @apply flex items-center gap-2 h-fit;
+                font-size: 12px;
+                p {
+                    @apply text-gry text-[12px] leading-[12px] font-normal h-fit;
+                }
+            }
+            p.price {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 25.6px;
+            }
+        }
+    }
+}
+
+.text-abt {
+    @apply py-[30px] px-[50px] flex items-center justify-center;
+    .wrap {
+        @apply max-w-[830px] text-center;
+    }
+    h2 {
+        @apply text-[40px] leading-[48px] font-bold mb-[10px];
+    }
+    p {
+        @apply text-[16px] leading-[25.6px];
+    }
+}
+
+@mixin containerPad () {
+    @apply px-[20px];
+}
+
+
+@media (max-width: 768px) {
+    .top-wrap {
+        @apply px-[20px];
+        ul {
+            @apply gap-[15px];
+            a {
+                @apply leading-[14px] text-[12px];
+                svg {
+                    font-size: 12px;
+                }
+            }
+        }
+        svg {
+            font-size: 24px;
+        }
+    }
+
+
+    .headings {
+        @include containerPad();
+        @apply py-[20px];
+        img {
+            @apply w-[120px];
+        }
+        nav {
+            display: none;
+        }
+    }
+} 
+
+
+

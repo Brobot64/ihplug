@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.overlay {
+    @apply absolute w-full h-full bg-[#0000007d] max-w-full max-h-full min-w-full min-h-full top-0 left-0 z-10;
+    background: linear-gradient(0deg,#000000a6, #0000004f);
+}
+
+.scroll-none::-webkit-scrollbar {
+    display: none
+}
+
+a {
+    transition: all .6s ease-in-out !important;
+    &:hover {
+        text-decoration: underline !important;
+        transform: translateX(2px);
+    }
+}
+
+.new-arrival {
+    @apply w-[55px] h-[55px] max-w-[55px] max-h-[55px] min-w-[55px] min-h-[55px] !absolute bg-center bg-cover bg-no-repeat top-0 right-0 z-[100];
+    background-image: url('/tagnew.png');
+}
+
+
+.best-selling {
+    @apply w-[55px] h-[55px] max-w-[55px] max-h-[55px] min-w-[55px] min-h-[55px] !absolute bg-center bg-cover bg-no-repeat top-0 right-0 z-[100];
+    background-image: url('/bestseller.png');
+}
+
+@import './mainhome.scss'
+
+
