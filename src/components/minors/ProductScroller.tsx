@@ -5,7 +5,7 @@ import earbudimg from '@/public/earpodcyb.jpg';
 const ProductScroller = () => {
   return (
     <React.Fragment>
-        <section className="scroller-product">
+        <section className="scroller-product md:display:block">
             <span className="navg">-</span>
             <div className="scrolls scroll-none">
                 <div className="product-item" style={{ 
@@ -16,7 +16,7 @@ const ProductScroller = () => {
                     // transition: 'background-image 0.5s ease-in-out',
                 }}>
                     <div className='texty'>
-                        <Link href='/'>
+                        <Link href='/earbuds'>
                             <h2>TWS Earbuds</h2>
                         </Link>
                         <p>20 products</p>
@@ -30,9 +30,9 @@ const ProductScroller = () => {
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',
                     // transition: 'background-image 0.5s ease-in-out',
-                }}>
+                    }}>
                     <div className='texty'>
-                        <Link href='/'>
+                        <Link href='/powerbanks'>
                             <h2>Power Bank</h2>
                         </Link>
                         <p>20 products</p>
@@ -48,7 +48,7 @@ const ProductScroller = () => {
                     // transition: 'background-image 0.5s ease-in-out',
                 }}>
                     <div className='texty'>
-                        <Link href='/'>
+                        <Link href='/earbuds'>
                             <h2>TWS Earbuds</h2>
                         </Link>
                         <p>20 products</p>
@@ -64,7 +64,7 @@ const ProductScroller = () => {
                     // transition: 'background-image 0.5s ease-in-out',
                 }}>
                     <div className='texty'>
-                        <Link href='/'>
+                        <Link href='/speaker'>
                             <h2>Speaker</h2>
                         </Link>
                         <p>20 products</p>
@@ -96,7 +96,7 @@ const ProductScroller = () => {
                     // transition: 'background-image 0.5s ease-in-out',
                 }}>
                     <div className='texty'>
-                        <Link href='/'>
+                        <Link href='/earbuds'>
                             <h2>TWS Earbuds</h2>
                         </Link>
                         <p>20 products</p>
@@ -112,7 +112,7 @@ const ProductScroller = () => {
                     // transition: 'background-image 0.5s ease-in-out',
                 }}>
                     <div className='texty'>
-                        <Link href='/'>
+                        <Link href='/chargers'>
                             <h2>Charger</h2>
                         </Link>
                         <p>10 products</p>
@@ -128,7 +128,7 @@ const ProductScroller = () => {
                     // transition: 'background-image 0.5s ease-in-out',
                 }}>
                     <div className='texty'>
-                        <Link href='/'>
+                        <Link href='/earbuds'>
                             <h2>IhPlug Earbuds</h2>
                         </Link>
                         <p>20 products</p>
@@ -144,7 +144,7 @@ const ProductScroller = () => {
                     // transition: 'background-image 0.5s ease-in-out',
                 }}>
                     <div className='texty'>
-                        <Link href='/'>
+                        <Link href='/earbuds'>
                             <h2>TWS Earbuds</h2>
                         </Link>
                         <p>20 products</p>
@@ -160,7 +160,7 @@ const ProductScroller = () => {
                     // transition: 'background-image 0.5s ease-in-out',
                 }}>
                     <div className='texty'>
-                        <Link href='/'>
+                        <Link href='/earbuds'>
                             <h2>TWS Earbuds</h2>
                         </Link>
                         <p>20 products</p>
