@@ -5,7 +5,7 @@ const Marqee = () => {
     <React.Fragment>
         {/* <marquee behavior="" direction=""
         </marquee> */}
-        <div className="marqee w-full p-4 bg-primary text-white">
+        <div className="marqee w-full p-4 text-white bg-red-500">
             trouble-free, free delivery, making sense
         </div>
     </React.Fragment>

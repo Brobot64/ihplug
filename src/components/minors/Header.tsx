@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image';
-import logo from '@/public/logo.svg';
+
 import { FiSearch, FiShoppingCart, FiUser } from 'react-icons/fi';
 import TopWrapText from './TopWrapText';
 import Marqee from './Marqee';
@@ -14,8 +14,9 @@ const Header = () => {
             <header className='headings'>
                 <Link href='/'>
                     <Image
-                        src={logo}
+                        src="/digifon-full-logo-dark.png"
                         width={160}
+                        height={160}
                         alt="Picture of the author"
                     />
 
