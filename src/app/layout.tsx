@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import '@/src/lib/styles/mainglobe.scss';
 import Header from "../components/minors/Header";
+import Footer from "../components/minors/Footer";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body>
       <Header/>
         {children}
+      <Footer/>
       </body>
     </html>
   );

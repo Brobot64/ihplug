@@ -41,7 +41,7 @@ const Header = () => {
 
                     <div className="pay-cart">
                         <div className='relative'>
-                            <span className='test absolute flex items-center justify-center bg-red-600 text-white text-[10px] w-[20px] h-[20px] text-center rounded-full font-[600] -top-[5px] -right-[10px]'>
+                            <span className='test absolute flex items-center justify-center bg-[#E60101] text-white text-[10px] w-[20px] h-[20px] text-center rounded-full font-[600] -top-[5px] -right-[10px]'>
                                 <span>0</span>
                             </span>
                             <FiShoppingCart size={29} />
