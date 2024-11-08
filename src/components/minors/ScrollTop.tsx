@@ -31,7 +31,7 @@ const ScrollTop = () => {
   return (
     <section className="relative w-full h-screen overflow-hidden">
       {/* Carousel Container */}
-      <div className="absolute inset-0 flex transition-transform duration-1000 ease-in-out" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+      <div className="absolute inset-0 flex transition-transform duration-1000 ease-in-out md:w-full no-cover" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
         {images.map((src, index) => (
           <div key={index} className="w-full h-full flex-shrink-0 relative">
             <Image
